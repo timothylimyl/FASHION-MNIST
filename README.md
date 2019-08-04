@@ -18,7 +18,7 @@ What I found was that reaching approximately 91-93% accuracy was pretty easy wit
 - Dropout of 50% was used
 - Batch Normalization after every activation function
 
-**Total Parameters - 23123131**
+**Total Parameters ~ 700,000**
 
 Note- Everytime I try reducing the FC layers, the accuracy will definitely drop below 94%. As I was tuning the parameters, my main goal was to try to have as less parameters as possible
 but the accuracy could never hit 94% whenever I tried increasing the max pooling filter size or reducing size of FC.
@@ -30,8 +30,8 @@ Running with my final CNN Architecture 3 times to get an average of the testing 
 
 | Test | Testing Accuracy (Fashion MNIST)  |  Testing Accuracy (MNIST)  |
 | :---         |     :---:      |          ---: |
-| 1 | 0.9404   | 0.9943    |
-| 2    | git diff       | git diff      |
+| 1 | 94.04%   | 99.43%    |
+| 2    | 93.79%     | 99.53%     |
 | 3    | git diff       | git diff      |
 | Average   | git diff       | git diff      |
 
@@ -61,4 +61,7 @@ Running with my final CNN Architecture 3 times to get an average of the testing 
  Thank you to the team that created the Fashion MNIST dataset, you can find out more about their effort at -   
  
  [Fashion-MNIST Official GitHub](https://github.com/zalandoresearch/fashion-mnist)
+ 
+ Thank you to Google, for providing free cloud GPU, it is really amazing that it is available to everyone! Check out COLABORATORY!
+ 
   
