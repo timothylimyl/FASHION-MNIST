@@ -51,7 +51,9 @@ Running with my final CNN Architecture 3 times to get an average of the testing 
  
  ![Mislabels2](https://user-images.githubusercontent.com/49274721/62420212-ee10a880-b6d1-11e9-857d-899a8f4ddac1.PNG)
  
- The total mislabels from T-Shirt and Shirt is averages around 330-400+ which is above 50% of the mislabels!
+ The total mislabels from T-Shirt and Shirt averages around 330-400+ which is above 50% of the mislabels! 
+ 
+ For my next version, I will augment data on T-Shirt and Shirt to add more data for specifically these two categories! Stay tune! 
  
  
  
