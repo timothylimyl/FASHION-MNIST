@@ -31,7 +31,7 @@ Running with my final CNN Architecture 3 times to get an average of the testing 
 | Test | Testing Accuracy (Fashion MNIST)  |  Testing Accuracy (MNIST)  |
 | :---         |     :---:      |          ---: |
 | 1 | 94.04%   | 99.43%    |
-| 2    | 93.79%     | 99.53%     |
+| 2    | 93.86%     | 99.53%     |
 | 3    | git diff       | git diff      |
 | Average   | git diff       | git diff      |
 
