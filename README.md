@@ -30,7 +30,7 @@ Running with my final CNN Architecture 3 times to get an average of the testing 
 
 | Test | Testing Accuracy (Fashion MNIST)  |  Testing Accuracy (MNIST)  |
 | :---         |     :---:      |          ---: |
-| 1 | git status     | git status    |
+| 1 | 0.9404   | 0.9943    |
 | 2    | git diff       | git diff      |
 | 3    | git diff       | git diff      |
 | Average   | git diff       | git diff      |
@@ -51,10 +51,14 @@ Running with my final CNN Architecture 3 times to get an average of the testing 
  
  ![Mislabels2](https://user-images.githubusercontent.com/49274721/62420212-ee10a880-b6d1-11e9-857d-899a8f4ddac1.PNG)
  
- The total mislabels from T-Shirt and Shirt averages around 330-400+ which is above 50% of the mislabels! 
+ The total mislabels from T-Shirt and Shirt averages around 300-400+ which is above 50% of the mislabels! 
  
  For my next version, I will augment data on T-Shirt and Shirt to add more data for specifically these two categories! Stay tune! 
  
  
+ ## Credits
  
+ Thank you to the team that created the Fashion MNIST dataset, you can find out more about their effort at -   
+ 
+ [Fashion-MNIST Official GitHub](https://github.com/zalandoresearch/fashion-mnist)
   
