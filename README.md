@@ -40,10 +40,10 @@ Running with my final CNN Architecture 3 times to get an average of the testing 
   Targeted Data augmentation to add extra specific data that will boost performance. 
   
   Majority of the mislabelled data was caused by the T-Shirt (Label 0) and Shirt (Label 1) as I predicted.
-  T-shirt and shirt images looks very alike especially on 28x28 sized images, I believe that even humans will find a hard time differentiating between the T-shirts and Shirts in this dataset.
+  T-shirt and shirt images looks very alike especially on 28x28 sized images, I believe that even humans will find a hard time        differentiating between the T-shirts and Shirts in this dataset.
   On further inspection, differentiate between Shirt and T-Shirt can actually be very easy once the focus is on the buttons.
   
-  I believe that once the deep CNN is able to extract out features of the button to differentiate T-Shirt from Shirt, the accuracy for the Fashion MNIST will be above 95% and be the current best algorithm in the benchmark.
+  I believe that once the deep CNN is able to extract out features of the button to differentiate T-Shirt from Shirt, the accuracy for the     Fashion MNIST will be above 95% and be the current best algorithm in the benchmark.
   
-  ![Screenshot](screenshot.png)
+ ![Mislabels](https://user-images.githubusercontent.com/49274721/62420175-48f5d000-b6d1-11e9-9e10-8f7d9206b0d5.PNG)
   
