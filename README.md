@@ -45,9 +45,14 @@ Running with my final CNN Architecture 3 times to get an average of the testing 
   
   I believe that once the deep CNN is able to extract out more distinct features to differentiate T-Shirt from Shirt, the accuracy for the     Fashion MNIST will be above 95% and be the top algorithm in the benchmark.
   
-  Every test that I did, the mislabels are always of such proportion. Example from my results-
+  Every test that I did, the mislabels are always of such proportion with most mislabels coming from T-Shirt (0) and Shirt (6). Example from my results-
   
  ![Mislabels](https://user-images.githubusercontent.com/49274721/62420175-48f5d000-b6d1-11e9-9e10-8f7d9206b0d5.PNG)
+ 
+ ![Mislabels2](https://user-images.githubusercontent.com/49274721/62420212-ee10a880-b6d1-11e9-857d-899a8f4ddac1.PNG)
+ 
+ The total mislabels from T-Shirt and Shirt is averages around
+ 
  
  
   
