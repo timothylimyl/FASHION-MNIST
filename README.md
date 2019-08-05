@@ -4,12 +4,12 @@ Fashion MNIST is a dataset containing 60,000 examples for the training set and 1
 The idea for the Fashion MNIST dataset is to serve as a replacement to the original MNIST dataset which is widely used for benchmarking machine learning algorithms.
 
 Replacing MNIST is a good idea because the MNIST datasets is already easily solved with the current Deep Learning algorithms. According to the Kaggle leaderboard, someone has already achieved 99.7% accuracy with MNIST.
-Besides that, I personally also feel that MNIST does not really serve as a good benchmark for computer vision tasks that seeks to identify objects as handwritten digits comparitively have way less distinct features than real-world objects.
+Besides that, I personally also feel that MNIST does not really serve as a good benchmark for computer vision tasks that seeks to identify objects as handwritten digits comparatively have way less distinct features than real-world objects.
 
 ## My Model
 
 I have tried many different CNN Architecture to get as high of a testing accuracy as I can. 
-Most of my time was spent comparing different network architecture and edited the network parameters to potentially give me the highest accuracy.
+Most of my time was spent comparing different network architecture and editing the network parameters to potentially give me the highest accuracy.
 What I found was that reaching approximately 91-93% accuracy was pretty easy with CNN, you can do it with 200k parameters but trying to reach 94% accuracy required a lot more parameters and took a lot of my time (finding a good architecture and understanding it). My final decision after testing numerous CNN and lots of tuning:
 
 - CNN Layer 1 and 2 with 128 filters of 3x3
@@ -34,13 +34,13 @@ Running with my final CNN Architecture 3 times to get an average of the testing 
 | 1 | 94.04%   | 99.53%    |
 | 2    | 93.99%     | 99.51%     |
 | 3    | 94.07%      | 99.48%     |
-| Average   | 94.03%       | 99.51%     |
+| Average   | **94.03%**       | **99.51%**     |
 
 ## Extra idea
 
   Targeted Data augmentation to add extra specific data that will boost performance. 
   
-  Majority of the mislabelled data was caused by the T-Shirt (Label 0) and Shirt (Label 1) as I predicted.
+  Majority of the mislabelled data was caused by the T-Shirt (Label 0) and Shirt (Label 1).
   T-shirt and shirt images looks very alike especially on 28x28 sized images, I believe that even humans will find a hard time        differentiating between the T-shirts and Shirts in this dataset.
   On further inspection, differentiate between Shirt and T-Shirt can actually be very easy once the focus is on the buttons.
   
