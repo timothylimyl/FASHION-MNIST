@@ -3,22 +3,23 @@
 Fashion MNIST is a dataset containing 60,000 examples for the training set and 10,000 examples for the testing set.
 The idea for the Fashion MNIST dataset is to serve as a replacement to the original MNIST dataset which is widely used for benchmarking machine learning algorithms.
 
-Replacing MNIST is a good idea because the MNIST datasets is already to easily solved with the current Deep Learning algorithms. According to the Kaggle leaderboard, someone has already achieved 99.7% accuracy with MNIST.
+Replacing MNIST is a good idea because the MNIST datasets is already easily solved with the current Deep Learning algorithms. According to the Kaggle leaderboard, someone has already achieved 99.7% accuracy with MNIST.
 Besides that, I personally also feel that MNIST does not really serve as a good benchmark for computer vision tasks that seeks to identify objects as handwritten digits comparitively have way less distinct features than real-world objects.
 
 ## My Model
 
 I have tried many different CNN Architecture to get as high of a testing accuracy as I can. 
 Most of my time was spent comparing different network architecture and edited the network parameters to potentially give me the highest accuracy.
-What I found was that reaching approximately 91-93% accuracy was pretty easy with CNN, you can do it with 200k parameters but trying to reach 94% accuracy required a lot more parameters. My final decision after testing numerous CNN
+What I found was that reaching approximately 91-93% accuracy was pretty easy with CNN, you can do it with 200k parameters but trying to reach 94% accuracy required a lot more parameters and took a lot of my time (finding a good architecture and understanding it). My final decision after testing numerous CNN and lots of tuning:
 
 - CNN Layer 1 and 2 with 128 filters of 3x3
 - CNN layer 3 with 256 filters of 3x3
-- FC Layer of size 256
-- Dropout of 50% was used
+- FC Layer of size 512,256 then output (10)
+- Dropout of 50% was used throughout 
 - Batch Normalization after every activation function
+- Max Pooling to reduce parameters
 
-**Total Parameters ~ 700,000**
+**Total Parameters ~ 1,000,000**
 
 Note- Everytime I try reducing the FC layers, the accuracy will definitely drop below 94%. As I was tuning the parameters, my main goal was to try to have as less parameters as possible
 but the accuracy could never hit 94% whenever I tried increasing the max pooling filter size or reducing size of FC.
@@ -30,10 +31,10 @@ Running with my final CNN Architecture 3 times to get an average of the testing 
 
 | Test | Testing Accuracy (Fashion MNIST)  |  Testing Accuracy (MNIST)  |
 | :---         |     :---:      |          ---: |
-| 1 | 94.04%   | 99.43%    |
-| 2    | 93.86%     | 99.53%     |
-| 3    | git diff       | git diff      |
-| Average   | git diff       | git diff      |
+| 1 | 94.04%   | 99.53%    |
+| 2    | 93.99%     | 99.51%     |
+| 3    | 94.07%      | 99.48%     |
+| Average   | 94.03%       | 99.51%     |
 
 ## Extra idea
 
