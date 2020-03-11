@@ -38,7 +38,7 @@ Running with my final CNN Architecture 3 times to get an average of the testing 
 
 ## Extra idea
 
-  Targeted Data augmentation to add extra specific data that will boost performance. 
+#### Targeted Data augmentation to add extra specific data that will boost performance. 
   
   Majority of the mislabelled data was caused by the T-Shirt (Label 0) and Shirt (Label 1).
   T-shirt and shirt images looks very alike especially on 28x28 sized images, I believe that even humans will find a hard time        differentiating between the T-shirts and Shirts in this dataset.
@@ -54,9 +54,12 @@ Running with my final CNN Architecture 3 times to get an average of the testing 
  
  The total mislabels from T-Shirt and Shirt averages around 300-400+ which is above 50% of the mislabels! 
  
- For my next version, I will augment data on T-Shirt and Shirt to add more data for specifically these two categories! Stay tune! 
  
+ #### Transfer Learning
  
+By utilising networks that have already been trained on huge image datasets such as ImageNet, the results will most probably be better and will require less time to train as we will just need to unfreeze the last few layers for re-training purposes. Besides that, we would not need to come out with our own network architecture. However, this defeats the purpose of this project which is to build your own architecture which gives you some intuition on techniques to optimize the performance of the network.
+
+
  ## Credits
  
  Thank you to the team that created the Fashion MNIST dataset, you can find out more about their effort at -   
